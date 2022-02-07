@@ -1,22 +1,28 @@
-var hostname = "terminal";
-var username = "terminal";
-var directory = "~";
-var cmd = "";
+var code = "";
+const regex = new RegExp('^[0-9]{6}$');
+
+function print(input) {
+  //
+}
+
+function send(input) {
+  //
+}
+
 document.addEventListener("keydown",  e => {
   if (e.keyCode === 8)  {
-    e.preventDefault();
-  } else if (e.keyCode === 13)  {
-    e.preventDefault();
-    cmd = cmd.toLowerCase();
-    var output = run(cmd);
-    if (output == "" || output == "undefined" || output == undefined) {
-      empty();
+    if (code == "") {
+      e.preventDefault();
     } else {
-      command(output);
+      code = code.slice(0, -1);
+  } else if (e.keyCode === 13)  {
+    if (regex.test(code)) {
+      send(code);
+    } else {
+      print("Invalid game code. Try again.");
+      code = "";
     }
-    cmd = "";
   } else {
-    cmd += String.fromCharCode(e.keyCode);
+    code += String.fromCharCode(e.keyCode);
   }
 });
-setup();
