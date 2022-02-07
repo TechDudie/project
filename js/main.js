@@ -2,7 +2,7 @@ var code = "";
 const regex = new RegExp('^[0-9]{6}$');
 
 function print(input) {
-  //
+  document.getElementById("terminal").value += input;
 }
 
 function send(input) {
