@@ -6,7 +6,14 @@ function print(input) {
 }
 
 function send(input) {
-  //
+  $.ajax({
+    url: "index.php",
+    type: "post",
+    data: { code : input },
+    success: function() {
+      print("\nConnecting...");
+    }
+  });
 }
 
 document.addEventListener("keydown",  e => {
@@ -26,3 +33,5 @@ document.addEventListener("keydown",  e => {
     code += String.fromCharCode(e.keyCode);
   }
 });
+
+print("Welcome to TechnoQuiz. Enter your game code below:\n");
