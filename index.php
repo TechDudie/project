@@ -1,3 +1,12 @@
+<?php
+while (1) {
+  $code = $_POST["code"];
+  if ($code != "") {
+    echo "Request successful. Code: " . $code;
+    $code = "";
+  }
+}
+?>
 <html>
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
