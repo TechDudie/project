@@ -22,6 +22,7 @@ document.addEventListener("keydown",  e => {
       e.preventDefault();
     } else {
       code = code.slice(0, -1);
+    }
   } else if (e.keyCode === 13)  {
     if (regex.test(code)) {
       send(code);
@@ -33,5 +34,8 @@ document.addEventListener("keydown",  e => {
     code += String.fromCharCode(e.keyCode);
   }
 });
+
+code = "";
+document.getElementById("terminal").value = "";
 
 print("Welcome to TechnoQuiz. Enter your game code below:\n");
