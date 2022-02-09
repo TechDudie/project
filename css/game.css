@@ -1,1 +1,32 @@
-
+#container {
+    position: relative;
+    height: 100%;
+    width: 500px;
+    padding: 0;
+}
+.button {
+    position: absolute;
+    border: 2px solid;
+    margin: 0;
+    padding: 5px;
+}
+.button:nth-child(1) {
+    backgroud-color: red;
+    top:0;
+    left:0;    
+}
+.button:nth-child(2) {
+    border-color: blue;
+    top:0;
+    right:0;
+}
+.button:nth-child(3) {
+    border-color: yellow;
+    bottom:0;
+    left:0;
+}
+.button:nth-child(4) {
+    border-color: green;
+    bottom:0;
+    right:0;
+}
