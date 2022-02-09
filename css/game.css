@@ -7,37 +7,41 @@ h1, h2 {
   color: white;
   font-family: Ubuntu Mono;
 }
-#container {
-  position: absolute;
-  top: 0px;
-  right: 0px;
-  bottom: 0px;
-  left: 0px;
+table {
+  font-family: Ubuntu Mono;
+  border-collapse: collapse;
+  width: 100%;
+  height: 100vh;
+}
+td, th {
+  border: 1px solid white;
+  text-align: centered;
+  padding: 8px;
+  width: 100%;
+  height: 100vh;
 }
 .button {
-  position: absolute;
-  border: 2px solid;
-  margin: 0px;
-  padding: 5px;
+  border: none;
+  color: white;
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
   font-family: Ubuntu Mono;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
 }
 .button: nth-child(1) {
   background-color: red;
-  top: 0px;
-  left: 0px;    
 }
 .button:nth-child(2) {
   background-color: blue;
-  top: 0px;
-  right: 0px;
 }
 .button:nth-child(3) {
   background-color: yellow;
-  bottom: 0px;
-  left: 0px;
 }
 .button:nth-child(4) {
   background-color: green;
-  bottom: 0px;
-  right: 0px;
 }
