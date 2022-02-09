@@ -8,10 +8,9 @@ h1, h2 {
   font-family: Ubuntu Mono;
 }
 #container {
-    position: relative;
+    position: absolute;
     height: 100%;
     width: 100%;
-    padding: 0;
 }
 .button {
     position: absolute;
