@@ -1,3 +1,12 @@
+body {
+  background-color: black;
+  overflow: hidden;
+  position: fixed;
+}
+h1, h2 {
+  color: white;
+  font-family: Ubuntu Mono;
+}
 #container {
     position: relative;
     height: 100%;
@@ -9,6 +18,7 @@
     border: 2px solid;
     margin: 0;
     padding: 5px;
+    font-family: Ubuntu Mono;
 }
 .button:nth-child(1) {
     backgroud-color: red;
