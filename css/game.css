@@ -10,7 +10,7 @@ h1, h2 {
 #container {
     position: relative;
     height: 100%;
-    width: 500px;
+    width: 100%;
     padding: 0;
 }
 .button {
@@ -21,22 +21,22 @@ h1, h2 {
     font-family: Ubuntu Mono;
 }
 .button:nth-child(1) {
-    backgroud-color: red;
+    background-color: red;
     top:0;
     left:0;    
 }
 .button:nth-child(2) {
-    border-color: blue;
+    background-color: blue;
     top:0;
     right:0;
 }
 .button:nth-child(3) {
-    border-color: yellow;
+    background-color: yellow;
     bottom:0;
     left:0;
 }
 .button:nth-child(4) {
-    border-color: green;
+    background-color: green;
     bottom:0;
     right:0;
 }
