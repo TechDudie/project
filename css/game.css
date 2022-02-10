@@ -26,7 +26,7 @@ h1, h2 {
   cursor: pointer;
   position: fixed;
 }
-.button: nth-child(1) {
+.button:nth-child(1) {
   background-color: #bf0000;
   top: 0;
   left: 0;
