@@ -1,6 +1,6 @@
 <?php
 $code = htmlentities($_POST["code"]);
-if ($code != "314159") { // PIE IN YOUR FACE LITERALLY IF YOU READ THE JOIN CODE
+if ($code != "271828") { // PIE IN YOUR FACE LITERALLY IF YOU READ THE JOIN CODE
   header('Location: 404.html');
   die(); // LEGENDS NEVER DIEEEEE
   // clearly this isn't a legend then
