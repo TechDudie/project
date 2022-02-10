@@ -4,7 +4,7 @@ body {
   position: fixed;
 }
 h1, h2 {
-  color: white;
+  color: black;
   font-family: Ubuntu Mono;
 }
 #container {
