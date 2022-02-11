@@ -62,18 +62,20 @@ h1, h2 {
     height: 20vh;
   }
   .button:nth-child(1) {
-    top: initial;
+    top: 20vh;
     left: initial;
   }
   .button:nth-child(2) {
-    top: initial;
+    top: 40vh;
     right: initial;
   }
   .button:nth-child(3) {
+    top: 60vh;
     bottom: initial;
     left: initial;
   }
   .button:nth-child(4) {
+    top: 80vh;
     bottom: initial;
     right: initial;
   }
