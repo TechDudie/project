@@ -78,3 +78,7 @@ h1, h2 {
     right: initial;
   }
 }
+form, input {
+  display: none;
+  visibility: hidden;
+}
