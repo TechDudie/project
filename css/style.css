@@ -17,3 +17,6 @@ form, input {
   display: none;
   visibility: hidden;
 }
+* {
+  touch-action: manipulation;
+}
