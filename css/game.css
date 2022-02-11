@@ -84,6 +84,6 @@ form, input {
   display: none;
   visibility: hidden;
 }
-body, h1, h2, div, button, form, input {
+* {
   touch-action: manipulation;
 }
