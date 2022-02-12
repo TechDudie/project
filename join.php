@@ -1,9 +1,8 @@
 <?php
-$code = htmlentities($_POST["code"]);
+$code = htmlentities($_POST["code"]); // sanitize the code a bit, but it doesn't make much difference in the long run because of how this is written
 if ($code != "314159") { // PIE IN YOUR FACE LITERALLY IF YOU READ THE JOIN CODE
   header('Location: 404.html');
-  die(); // LEGENDS NEVER DIEEEEE
-  // clearly this isn't a legend then
+  die();
 }
 header('Location: game.html');
 ?>
